@@ -1,0 +1,9 @@
+This had more detail than expected but ultimately the implementation failed as soon as i put it on my own machine and tried to run it.
+The replit website must have been holding some kind of database that was allowing it work but there were a lot of issues.
+I spent a little under an hour trying to get the website to just run to see if all the things were working but it became sort of a rabbit hole
+ with one issue leading to another as soon as I fixed the first error.
+I would take time to fix the database issue along with verifying that it did all of the other things it was told to do. I had it create 
+Security_Documentation to go through the Owasp top 10 and try to explain all the things it did and rate each one with why it added those features.
+
+It is supposed to be run with Make all, I told it to use sqLite as that is what i usually use along with react and node however it seemed to ignore
+almost all of my prompts and suggestions and take the easiest route for creating this project, the website preview looked great though!
