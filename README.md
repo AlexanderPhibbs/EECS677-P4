@@ -26,3 +26,4 @@ Running the Application Locally:
    Frontend will run at http://localhost:3000
 
    
+The vibe version should be run with make all but wasnt working for me even after an hour of troubleshooting.
