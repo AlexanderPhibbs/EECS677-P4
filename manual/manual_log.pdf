@@ -1,0 +1,38 @@
+OWASP Top 10 Security Checklist (2021):
+
+Things that I consdered handled from the list.
+
+A01 - Broken Access Control:
+   - Ensures users can only perform actions allowed for their role. Admin can delete any post; regular users can only delete their own posts.
+
+A02 - Cryptographic Failures:
+   - Passwords are hashed using bcrypt.
+
+A03 - Injection:
+   - Used parameterized queries with SQLite to prevent SQL injection.
+
+A07 - Identification and Authentication Failures:
+   - Sessions managed with express-session. Password hashing with bcrypt ensures authentication is secure.
+
+A08 - Software and Data Integrity Failures:
+   - Verified that frontend code and backend dependencies are from trusted sources.
+
+A10 - Server-Side Request Forgery (SSRF):
+   - Do not allow backend to make arbitrary HTTP requests based on user input.
+
+Features or different things I could change to make it more secure with more time.
+
+A04 - Insecure Design:
+   - I could add rate-limiting, CSRF protection, and input validation to strengthen design.
+
+A05 - Security Misconfiguration:
+   - Ensure CORS is configured to allow only the frontend origin and sessions are secured with proper flags.
+
+A06 - Vulnerable and Outdated Components:
+   - Keep all Node.js, React, and npm packages up to date. A few packages gave warning flags that they are depreciated.
+
+A09 - Security Logging and Monitoring Failures:
+   - Implement logging for login attempts, post creation/deletion, and admin actions for auditing purposes.
+
+Most of these things wouldnt be a large overhaul of the program but some minor changes that would only take a few hours to figure out and implement.
+For all of the features I belive are secure formal testing would be required to make sure all of these are up to the standards.
